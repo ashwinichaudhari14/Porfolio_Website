@@ -1,0 +1,420 @@
+<html>
+    <head>
+        <title>
+            website
+        </title>
+        <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   scroll-behavior: smooth;
+ }
+
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*navbar start*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.logo-container{
+    display:flex;
+    justify-content: baseline;
+    align-items: center;   
+}
+
+.logo{
+    width:80px;
+}
+
+.logo-text{
+margin-left: -1.2rem;
+font-size:28px;
+}
+
+.nav-items{
+    display:flex;
+    gap:2rem;
+    padding: 0 4em;
+    font-weight:500;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.nav-items div:hover{
+    transition: all 0.8s;
+    font-weight:bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*hero-section*/
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+    gap:5rem; 
+}
+
+.hero-section-left{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2rem; 
+}
+
+.hero-section-heading{
+    color: #343d68;
+    font-weight:500 ;
+    font-size:35px ;
+}
+
+.hero-section-sub-heading{
+    line-height: 45px;
+    font-size:45px ;
+}
+
+.hero-section-description{
+    font-weight:500 ;
+    margin-top: 1rem ;
+    width: 70%;
+}
+
+.button{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 89, 0);
+    color: white;
+    padding-left:50px;
+    padding-top: 15px;
+    cursor: pointer;
+
+}
+
+.faded-text{
+    position:absolute;
+    color:rgb(231,231,231);
+    bottom: -16%;
+    left:-1%;
+    font-weight:bold;
+    font-size:7em;
+    transition:all 3s;
+    user-select: none;
+}
+
+.hero-section-right{
+    position: relative;
+}
+
+.user-image{
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: scaleimage 5s linear infinite;
+}
+
+@keyframes scaleimage{
+    0%{
+       filter: grayscale(0);
+       transform: scale(1);
+    }
+    50%{
+       filter:grayscale(1);
+       transform:scale(1.1);
+       box-shadow: 3px 3px 10px;
+
+    }
+    100%{
+    filter:grayscale(0);
+    transform: scale(1);
+    }
+}
+
+.information-skills{
+    display:flex;
+    gap:30px;
+    margin:auto;
+    position: relative;
+    padding:5rem;
+}
+
+.description-left{
+ width: 50%;
+ display:flex;
+ flex-direction: column;
+}
+
+.skills-heading{
+  color: orangered;
+  font-size:50px;
+  font-style: bold;
+  line-height: 50px;
+}
+
+.span{
+    font:bold;
+    font-size:90px;
+}
+
+
+.html{
+    width:70px;
+    height:60px;
+    transition: all 0.5s;
+}
+
+.html:hover{
+   transform: scale(1.2);
+}
+
+.stacks-right{
+    width: 50%;
+    display: flex;
+    flex-wrap:wrap;
+    gap:2rem;
+    position: relative;
+    justify-content: center;
+}
+
+.skills-sub-heading{
+    margin-top: 1rem;
+    width: 76%;
+    text-align: justify;
+}
+
+.faded-skill{
+    position:absolute;
+    font-size: 15em;
+    font-style: bold;
+    color:rgb(231,231,231);
+    bottom:-34%;
+    right:-10%;
+    user-select: none;
+}
+
+.contact-section{
+   width:100%;
+   background-color: rgba(231, 231, 231, 0.348);
+   position: relative;
+}
+
+.contact-container{
+     width: 100%;
+}
+
+.contact-heading{
+     font-size: 5em;
+     color: orangered;
+     padding-top: 2rem;
+}
+
+.contact-sub-heading{
+     font-size: 3rem;
+     color: #343d68aa;
+     text-transform: capitalize;
+     padding-top: 15px;
+}
+
+.form{
+     margin-top: 25px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     gap:30px;
+}
+
+.row{
+    width: 70%;
+    height: 50px;
+    padding: 0 2rem;
+    font-size: 18px;
+    border-radius:5px;
+    box-shadow: 2px 2px 10px #1f1f1f;
+    font-weight: 500 ;
+    border: none;
+    margin: 17px;
+    padding-top: 1rem;
+}
+
+#msg{
+    width: 70%;
+    height: 170px;
+    padding-top:140px;
+    font-size: 18px;
+    border-radius:5px;
+    box-shadow: 2px 2px 10px #1f1f1f;
+    font-weight: 500 ;
+    border: none;
+    margin: 17px;
+    padding-left:33px;
+    font: bold;
+}
+
+.btn{
+    width:250px;
+    height: 50px;
+    margin-top:35px;
+    padding-top:12px ;
+    padding-bottom: 12px;
+    text-align: center;
+    margin-left: 450px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px ;
+    text-decoration-line: none;
+}
+
+        </style>
+    </head>
+    <body>
+        
+<div class="wrapper">
+            <div class="container">
+        <!--navbar start-->
+                <div class="navbar">
+        
+                <div class="logo-container">
+                    <img src="C:\Users\ASHWINI\Downloads\J(shape)portfolio web.jpg"class="logo">
+                    <div class="logo-text">ohn</div>
+                </div>
+        
+               <div class="nav-items">
+                <div>projects</div>
+                <div>Skills</div>
+                <div>contact me</div>
+               </div>
+        
+               </div>
+<!--navbar stop-->
+<!--hero-section start-->
+<div class="hero-section">
+
+    <div class="faded-text">john doe</div>    
+    <div class="hero-section-left">
+     <div class="hero-section-heading">Hi!! John Doe</div>
+     <div class="hero-section-sub-heading">I Am A Developer</div>
+     <div class="hero-section-description">i am a software developer & here is my portfolio website.here you'ii
+         learn about my journey as a software developer.
+     </div>
+     <div class="button"id="btn">Hire me</div>
+     </div>
+ 
+   <div class="hero-section-right">
+     <img src="C:\Users\ASHWINI\Downloads\user( img)portfolio web.jpg"class=user-image>
+  </div>
+
+  </div>
+  </div><!--container-->
+<!--hero-section stop-->
+
+<!--skills-section-start-->
+
+<div class="container information-skills">
+    
+    <div class="faded-skill">skills</div>
+    
+    <div class="description-left">
+        <h4 class="skills-heading">
+          <span>m</span>e
+           and <br> my tech stack
+     </h4>
+        <div class="skills-sub-heading">
+             <p>hi everyone my name is john doe i am a full stack web
+                developer i have been working for last 3 years and currently i am 
+                working with a budding startup in usa and a full time
+                freelancer. currently i am working on nextjs and making
+                beautiful ui-ux are my key features<br><br>
+   
+                lorem ispum doler,sit amet cosectetur adipisicing elit. non
+                doloremque aspernatur.maiores voluptatum minus laudantium?
+                persciats accusamus minima porro dolers necessitatibus0.
+                magni dolorem et qui veniam nulla sequi molestie maxime.
+                <br><br>
+
+                lorem ipsum doler sit amet conecteur adipilsing elit.
+                quidem quos ulham veritaris voluptates tenetur qui ispa nulla
+                culpa itaque.
+            </p>
+        </div>
+    </div>
+
+       <div class="stacks-right">
+           <img src="C:\Users\ASHWINI\Downloads\stack\HTML.png"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\CSS.png"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Javascript.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\NodeJs.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\React.png"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Next.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Redux.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Vercel.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Github.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Bootstrap.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Docker.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Express.png"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\NextJsCircle.png"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Tailwind.png"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\NodeJs.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\MongoDB.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Vercel.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Git.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Graphql.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\K8s.svg" class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\MaterialUI.svg" class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\Bash.svg"class="html">
+           <img src="C:\Users\ASHWINI\Downloads\stack\ChartJs.svg"class="html">
+
+        </div>
+    
+</div>
+   <!-- information-skills-section-stop-->
+
+<!--contact-section start-->
+
+<div class="contact-section">
+    <div class="container">
+        <h3 class="contact-heading">contact me</h3>
+        <p class="contact-sub-heading">Questions, Thoughts, Or Just Want To Say Hello?</p>
+        <form class="form">
+            <input type="text" name="name"placeholder="enter your name"class="row">
+            <input type="email" name="email" placeholder="enter your email"class="row">
+            <input type="name" name="subject"placeholder="enter your subject"class="row">
+            <input type="message" name="message" placeholder="your message"id="msg">  
+                
+        </form>
+        <div>
+            <a href="#" class="btn"> send message </a>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+    </body>
+</html>
